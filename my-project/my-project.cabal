@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 63313d57543d826c20a9f42b240e3c4fa78bde4c74c39fc147f154acf9845d75
+-- hash: 093283c9d501eb4f350f8ca96560f1c59f542d4d44eb1c5983c076d13678b6b5
 
 name:           my-project
 version:        0.1.0.0
@@ -36,6 +36,7 @@ library
       base >=4.7 && <5
     , io-streams
     , mysql-haskell
+    , text
   default-language: Haskell2010
 
 executable my-project-exe
@@ -50,6 +51,7 @@ executable my-project-exe
     , io-streams
     , my-project
     , mysql-haskell
+    , text
   default-language: Haskell2010
 
 test-suite my-project-test
@@ -65,4 +67,5 @@ test-suite my-project-test
     , io-streams
     , my-project
     , mysql-haskell
+    , text
   default-language: Haskell2010
